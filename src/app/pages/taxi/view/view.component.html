@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>View Taxi</h1>
+  
+    <a href="#" routerLink="/taxi/index" class="btn btn-primary">Back</a>
+   
+    <div>
+        <strong>ID:</strong>
+        <!-- <p>{{ taxi.id }}</p> -->
+    </div>
+   
+    <div>
+        <strong>Plate:</strong>
+        <!-- <p>{{ taxi.plate }}</p> -->
+    </div>
+
+    <google-map height="400px" width="750px" [center]="center" [zoom]="zoom">
+      <map-polyline [path]="vertices" />
+    </google-map>
+</div>
